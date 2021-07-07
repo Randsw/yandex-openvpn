@@ -1,0 +1,25 @@
+---
+- hosts: all
+  gather_facts: true
+  become: yes
+
+  pre_tasks:
+
+    - name: Install firewalld
+      yum: 
+        name: "{{ item }}" 
+        state: latest
+      loop:
+        - firewalld
+
+    - name: Enable firewalld
+      service: 
+        name: firewalld 
+        state: started 
+        enabled: yes
+
+  roles:
+    - role: kyl191.openvpn
+      clients:
+        - client1
+        - client2

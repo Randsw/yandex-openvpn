@@ -1,0 +1,6 @@
+---
+openvpn_dualstack: false
+openvpn_custom_dns:
+  - 8.8.8.8
+  - 1.1.1.1
+openvpn_client_register_dns: false
