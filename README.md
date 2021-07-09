@@ -1,1 +1,1 @@
-# Deploy OpenVPN server and create config for clients
+# Deploy OpenVPN server and create config for clients on Yandex.Cloud
