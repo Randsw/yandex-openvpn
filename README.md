@@ -1,1 +1,1 @@
-# Deploy OpenVPN server and create config for clients on Yandex.Cloud
+# Deploy OpenVPN server and create config for clients on Yandex.Cloud using Ansible and Terraform
